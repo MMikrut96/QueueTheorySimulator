@@ -1,0 +1,18 @@
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<HBox xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controller" alignment="CENTER">
+    <Button fx:id="startButton" onAction="#startClicked" text="Show Charts" GridPane.rowIndex="2"
+            GridPane.halignment="CENTER"/>
+    <GridPane>
+        <BorderPane xmlns:fx="http://javafx.com/fxml" fx:id="firstPlot" VBox.vgrow="ALWAYS">
+        </BorderPane>
+    </GridPane>
+    <GridPane>
+        <BorderPane xmlns:fx="http://javafx.com/fxml" fx:id="secondPlot" VBox.vgrow="ALWAYS">
+        </BorderPane>
+    </GridPane>
+</HBox>
